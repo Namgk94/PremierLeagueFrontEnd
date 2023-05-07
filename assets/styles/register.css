@@ -1,0 +1,135 @@
+/* ẩn logo to ở phần header ->> thay vào logo nhỏ */
+.nav-logo-no-res {
+    display: none !important;
+} 
+.nav-logo-res {
+    display: block !important;
+}
+.mainNavBar .navigation-bar{
+    margin-left: 20px;
+}
+
+/* hidden sub nav */
+.navbar-nav .nav-item.active::before{
+    display: none;
+}
+.subNavBar{
+    display: none;
+}
+
+
+#wrapper-form{
+    width: 100%;
+    margin-top: 50px;
+}
+#wrapper-form .form-title{
+    width: 100%;
+    height: 200px;
+    background-image: url('/assets/images/background-header-page.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.form-title h1{
+    color: #fff;
+    font-size: 80px;
+    margin-left: 40px;
+}
+#form-register{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form-register>p{
+    color: #fff;
+    background-color: #e90052;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+
+.form-group, 
+.gender-input{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.form-group .content{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:10px;
+}
+.form-group label,
+.gender-input strong{
+    flex: 1;
+    font-size: 14px;
+    font-weight: 600;
+}
+.form-input{
+    flex: 2;
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #e8e8e8;
+    border: 1px solid #626262;
+    margin-top: 5px;
+    outline: none;
+    transition: 0.3s all;
+}
+.form-radio-input{
+    flex: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-radio-input .option label{
+    font-size: 14px;
+    font-weight: 500;
+}
+.form-input:focus{
+    border: 1px solid #e90052;
+    box-shadow: 0 0 3px 0px #e90052;
+}
+.submit-form{
+    background-color: #37003c;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 15px;
+    padding: 10px 200px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+.form-message{
+    color: #ff2c2c;
+    font-size: 14px;
+    justify-self: flex-start;
+}
+
+.invalid{
+    border: 1px solid #ff2c2c;
+    box-shadow: 0 0 3px 0px #ff2c2c;
+}
+
+.submit-form:hover{
+    background-color: #e90052;
+}
+.submit-form:active{
+    background-color: #e90052;
+}

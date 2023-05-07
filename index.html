@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Football</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <link rel="stylesheet" href="./assets/styles/content_home.css">
+    <link rel="stylesheet" href="./assets/styles/ranking_table.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/header_collapse.css">
+    <link rel="stylesheet" href="./assets/styles/featured_pl_and_coach.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- header -->
+    <header id="header">
+        <!-- club site on top -->
+        <div class="club-site-wrapper">
+            <ul class="club-site-content"></ul>
+        </div>
+
+        <div id="NavigationBar">
+            <!-- Brand -->
+            <a class="navbar-brand nav-logo-no-res" href="#">
+                <div class="league-logo">
+                    <img src="./assets/images/premier-league-logo.png" alt="league-logo">
+                </div>
+            </a>
+
+            <!-- main navbar -->
+            <div class="mainNavBar">
+                <a class="nav-logo-res" href="#">
+                    <div class="league-logo-res">
+                        <img src="./assets/images/premier-league-logo-res.png" alt="league-logo">
+                    </div>
+                </a>
+                <nav class="navigation-bar">
+
+                    <!-- Navbar links -->
+                    <div class="navbar-no-collapse">
+                        <ul class="navbar-nav">
+                            <li role="menu" class="nav-item active">
+                                <p class="nav-link" href="">Premier League
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="#">Home</a></li>
+                                        <li><a class="item-dropdown" href="#">Fixtures</a></li>
+                                        <li><a class="item-dropdown" href="#">Results</a></li>
+                                        <li><a class="item-dropdown" href="table.html">Table</a></li>
+                                        <li><a class="item-dropdown" href="#">Awards</a></li>
+                                        <li><a class="item-dropdown" href="hall_of_fame.html">Hall of Fame</a></li>
+                                        <li><a class="item-dropdown" href="clubs.html">Club</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li role="menu" class="nav-item">
+                                <p class="nav-link" href="">Fantasy
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="#">Fantasy</a></li>
+                                        <li><a class="item-dropdown" href="#">Fantasy Draft</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" href="">Video</p>
+                            </li>
+                            <li role="menu" class="nav-item">
+                                <p class="nav-link" href="">Communities
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="#">Latest</a></li>
+                                        <li><a class="item-dropdown" href="strategy.html">Strategy</a></li>
+                                        <li><a class="item-dropdown" href="programmes.html">Programmes</a></li>
+                                        <li><a class="item-dropdown" href="">PL Charitable Fund</a></li>
+                                        <li><a class="item-dropdown" href="#">Supporting the game</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li role="menu" class="nav-item">
+                                <p class="nav-link" href="">More
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="stats.html">Stats</a></li>
+                                        <li><a class="item-dropdown" href="#">Stay Well</a></li>
+                                        <li><a class="item-dropdown" href="#">Man of the Match</a></li>
+                                        <li><a class="item-dropdown" href="#">Transfer</a></li>
+                                        <li><a class="item-dropdown" href="#">VAR</a></li>
+                                        <li><a class="item-dropdown" href="#nike-ball-hub-content">Nike Ball Hub</a></li>
+                                        <li><a class="item-dropdown" href="#">About</a></li>
+                                        <li><a class="item-dropdown" href="#">Contact Us</a></li>
+                                        <li><a class="item-dropdown" href="#">Season review</a></li>
+                                        <li><a class="item-dropdown" href="partners.html">Partners</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="nav-options">
+                    <p class="slogan">No room For Racism</p>
+                    <p class="sign-in">
+                        <a href="/sign_in_page.html" target="_blank">Sign in</a>
+                    </p>
+                    <form class="form-inline" action="">
+                        <input class="search-input" type="text" placeholder="Search">
+                        <button class="btn-search" type="submit"><i class="fa fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+
+                    <div class="collapse-btn">
+                        <div class="menu-btn active">
+                            <i class="fa fa-solid fa-bars"></i>
+                        </div>
+                        <div class="close-btn">
+                            <i class="fa fa-regular fa-xmark"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="navbar-collapse">
+                <div class="menu-title">
+                    <div class="nav-item">
+                        <p>Premier League
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Fantasy
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Video
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Communities
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>More
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-options">
+                    <!-- PL -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Fixtures</a>
+                        </li>
+                        <li>
+                            <a href="#">Results</a>
+                        </li>
+                        <li>
+                            <a href="table.html">Table</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards</a>
+                        </li>
+                        <li>
+                            <a href="hall_of_fame.html">Hall of Fame</a>
+                        </li>
+                        <li>
+                            <a href="club.html">Clubs</a>
+                        </li>
+                    </ul>
+
+                    <!-- Fantasy -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Fantasy</a>
+                        </li>
+                        <li>
+                            <a href="#">Fantasy Draft</a>
+                        </li>
+                    </ul>
+
+                    <!-- Video -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">Fantasy</a>
+                        </li>
+                        <li>
+                            <a href="#">Playlists</a>
+                        </li>
+                        <li>
+                            <a href="#">All Videos</a>
+                        </li>
+                    </ul>
+
+                    <!-- communities -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Latest</a>
+                        </li>
+                        <li>
+                            <a href="strategy.html">Strategy</a>
+                        </li>
+                        <li>
+                            <a href="programmes.html">Programes</a>
+                        </li>
+                        <li>
+                            <a href="#">PL Charitable Fund</a>
+                        </li>
+                        <li>
+                            <a href="#">Supporting the game</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- more -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="stat.html">Stats</a>
+                        </li>
+                        <li>
+                            <a href="#">Stay well</a>
+                        </li>
+                        <li>
+                            <a href="#">Man of the match</a>
+                        </li>
+                        <li>
+                            <a href="#">Transfer</a>
+                        </li>
+                        <li>
+                            <a href="#">VAR</a>
+                        </li>
+                        <li>
+                            <a href="#nike-ball-hub-content">Nike Ball Hub</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Season review</a>
+                        </li>
+                        <li>
+                            <a href="partners.html">Partners</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="subNavBar">
+                <ul>
+                    <li class="subNav-item active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Fixtures</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Results</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="table.html">Table</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Awards</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="hall_of_fame.html">Hall of Fame</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="clubs.html">Clubs</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+    <section id="content-section" class="content-home-page">
+        <div class="featured-news container-fluid">
+            <div class="featured-new-main container">
+                <div class="new-main-item new-img">
+                    <img src="./assets/images/SOUTHAMPTON_TALKING-TACTICS.jpg" alt="">
+                </div>
+                <div class="new-main-item new-discription">
+                    <div class="thumb-tag padding-left-30">
+                        <strong>Fantasy Premier League</strong>
+                    </div>
+                    <a class="new-header" href="">
+                        <h2 class="padding-left-30">Bella-Kotchap and Salisu forming a strong barrier</h2>
+                    </a>
+                    <div class="new-footer padding-left-30">
+                        <p>Adrian Clarke analyses Southampton's pair of centre-backs and how their skills can stop Aston
+                            Villa</p>
+                    </div>
+                    <div class="related-content padding-left-30">
+                        <h4>Related Content</h4>
+                        <p><i class="fa fa-light fa-newspaper"></i>
+                            <a href="">Clubs remember Her Majesty The Queen</a>
+                        </p>
+                        <p><i class="fa fa-light fa-newspaper"></i>
+                            <a href="">Premier League statement</a>
+                        </p>
+                        <p><i class="fa fa-light fa-newspaper"></i>
+                            <a href="">Premier League mourns Queen Elizabeth II's passing</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-new-sub container">
+                <div class="new-sub-item">
+                    <img src="./assets/images/SON-HEUNG-MIN_TALKING-TACTICS.jpg" alt="">
+                    <div class="new-sub-header">
+                        <strong><i>Talking Tactics</i></strong>
+                        <h5>Son aiming to regain red-hot form</h5>
+                    </div>
+                </div>
+                <div class="new-sub-item">
+                    <img src="./assets/images/ISAK_FEATURED_NEW.jpg" alt="">
+                    <div class="new-sub-header">
+                        <strong><i>Fantasy Premier League</i></strong>
+                        <h5>GW8 Differentials: Isak has schedule to thrive</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="homepage-content-wrapper container">
+
+            <!-- rankings table, featured player, featured coach.... -->
+            <div class="ranking-and-featured">
+                <div class="ranking-table">
+                    <div class="table-header">
+                        <img src="./assets/images/pml-logo-rank.png" alt="">
+                        <p>First Team</p>
+                    </div>
+
+                    <div class="rank-table-content">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th class="pos-col" scope="col">
+                                        <span title="Position">Pos</span>
+                                    </th>
+                                    <th class="club-col" scope="col">
+                                        <span>Club</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span title="Played">pl</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span title="Goal Difference">gd</span>
+                                    </th>
+                                    <th scope="col">
+                                        <span title="Points">pts</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-body">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="featured-section">
+                    <div class="featured-players">
+                        <!-- render-in-js -->
+                    </div>
+
+                    <div class="featured-coach">
+                        <!-- render-in-js -->
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- news.... -->
+            <div class="homepage-main-content">
+
+                <!-- banner partner -->
+                <div class="partner-banner">
+                    <div class="partner-item">
+                        <img src="./assets/images/logo-adidas.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./assets/images/logo-nike.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./assets/images/logo-barclays.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./assets/images/logo-heineken.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./assets/images/logo-333.png" alt="">
+                    </div>
+                    <div class="partner-item">
+                        <img src="./assets/images/logo-hublot.png" alt="">
+                    </div>
+                </div>
+
+                <!-- HOME PAGE - MAIN CONTENT -->
+
+                <!-- #WE_ARE_ONE_TEAM -->
+                <div class="home-main-item">
+                    <div class="item-header">
+                        <h4>#WeAreOneTeam</h4>
+                        <div class="more-btn">
+                            <p>More News</p>
+                            <i class="fa fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="news-content weareoneteam-content">
+                        <div class="weareoneteam-item">
+                            <div class="item-img">
+                                <img src="./assets/images/weareoneteam_1.jpg" alt="">
+                            </div>
+
+                            <div class="discription">
+                                <strong class="new-tag">Communities</strong>
+                                <p class="new-title">PL30: Plymouth honour youth and disability coach
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">PL30: Southampton hero honoured for work with senior Saints</a>
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">PL30: Lewes boosted by new pitch funded by Premier League</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="weareoneteam-item">
+                            <div class="item-img">
+                                <img src="./assets/images/weareoneteam_2.jpg" alt="">
+                            </div>
+
+                            <div class="discription">
+
+                                <strong class="new-tag">Communities</strong>
+                                <p class="new-title">PL30: Lewes boosted by new pitch funded by Premier League</p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">League to increase funding for non-league and women's clubs</a>
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">League announces increased funding for women’s football</a>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LATEST VIDEO -->
+                <div class="home-main-item">
+                    <div class="item-header">
+                        <h4>Latest Videos</h4>
+                        <div class="more-btn">
+                            <p>More Videos</p>
+                            <i class="fa fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="news-content latest-video-section">
+                        <div class="video-main">
+                            <div class="item-img">
+                                <img src="./assets/images/latest_video_thumb/main_thumb.jpg" alt="">
+                                <i class="fa fa-solid fa-play play-btn"></i>
+                                <div class="video-specific">
+                                    <i class="fa fa-solid fa-play"></i>
+                                    <p class="video-time">
+                                        <span class="minutes">02</span>:<span class="seconds">24</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="discription">
+                                <p class="video-title">Goal of the day: Shearer's stunning free-kick</p>
+                                <p class="video-discription">Enjoy a superb strike by the Premier League's all-time
+                                    leading scorer for Newcastle against Arsenal</p>
+                            </div>
+                        </div>
+                        <div class="video-sub">
+                            <div class="row-content">
+                                <div class="video-sub-item">
+                                    <div class="item-img">
+                                        <img src="./assets/images/latest_video_thumb/sub_thumb_1.jpg" alt="">
+                                        <i class="fa fa-solid fa-play play-btn"></i>
+                                        <div class="video-specific">
+                                            <i class="fa fa-solid fa-play"></i>
+                                            <p class="video-time">
+                                                <span class="minutes">02</span>:<span class="seconds">24</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="discription">
+                                        <p class="video-title">Best FPL Wildcard squad</p>
+                                    </div>
+                                </div>
+
+                                <div class="video-sub-item">
+                                    <div class="item-img">
+                                        <img src="./assets/images/latest_video_thumb/sub_thumb_2.jpg" alt="">
+                                        <i class="fa fa-solid fa-play play-btn"></i>
+                                        <div class="video-specific">
+                                            <i class="fa fa-solid fa-play"></i>
+                                            <p class="video-time">
+                                                <span class="minutes">02</span>:<span class="seconds">24</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="discription">
+                                        <p class="video-title">Sixteen years ago today: Alonso scores from own half
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row-content">
+                                <div class="video-sub-item">
+                                    <div class="item-img">
+                                        <img src="./assets/images/latest_video_thumb/sub_thumb_3.jpg" alt="">
+                                        <i class="fa fa-solid fa-play play-btn"></i>
+                                        <div class="video-specific">
+                                            <i class="fa fa-solid fa-play"></i>
+                                            <p class="video-time">
+                                                <span class="minutes">02</span>:<span class="seconds">24</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="discription">
+                                        <p class="video-title">FPL team of the season so far
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="video-sub-item">
+                                    <div class="item-img">
+                                        <img src="./assets/images/latest_video_thumb/sub_thumb_4.jpg" alt="">
+                                        <i class="fa fa-solid fa-play play-btn"></i>
+                                        <div class="video-specific">
+                                            <i class="fa fa-solid fa-play"></i>
+                                            <p class="video-time">
+                                                <span class="minutes">02</span>:<span class="seconds">24</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="discription">
+                                        <p class="video-title">Premier League pays respects to Queen Elizabeth II
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- LATEST NEWS -->
+                <div class="home-main-item">
+                    <div class="item-header">
+                        <h4>Latest News</h4>
+                        <div class="more-btn">
+                            <p>Latest News</p>
+                            <i class="fa fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="news-content latest-new-section">
+                        <!-- latest-new 1 -->
+                        <div class="latest-new-item">
+                            <div class="item-img">
+                                <img src="./assets/images/lastest_news_thumb/new_thumb_1.jpg" alt="">
+                            </div>
+
+                            <div class="discription">
+                                <strong class="new-tag">Fantasy Premier League</strong>
+                                <p class="new-title">FPL Watchlist: Sa can challenge Pope for No 1 spot
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">
+                                        Off the Bench: Should you turn to Son?
+                                    </a>
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">
+                                        Keep or sell Man City stars in FPL?
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- latest-new 2 -->
+                        <div class="latest-new-item">
+                            <div class="item-img">
+                                <img src="./assets/images/lastest_news_thumb/new_thumb_2.jpg" alt="">
+                            </div>
+
+                            <div class="discription">
+
+                                <strong class="new-tag">Quiz</strong>
+                                <p class="new-title">Test your knowledge of the season so far</p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">
+                                        Nwaneri makes history as youngest Premier League player
+                                    </a>
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">
+                                        Shearer: Grealish goal a big confidence boost
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- latest-new 3  -->
+                        <div class="latest-new-item">
+                            <div class="item-img">
+                                <img src="./assets/images/lastest_news_thumb/new_thumb_3.jpg" alt="">
+                            </div>
+
+                            <div class="discription">
+
+                                <strong class="new-tag">Fantasy Premier League</strong>
+                                <p class="new-title">Keep or sell Man City stars in FPL?</p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">
+                                        FPL team news: Guardiola provides Phillips update
+                                    </a>
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">
+                                        Premier League mourns Queen Elizabeth II's passing
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- latest-new 4  -->
+                        <div class="latest-new-item">
+                            <div class="item-img">
+                                <img src="./assets/images/lastest_news_thumb/new_thumb_4.jpg" alt="">
+                            </div>
+
+                            <div class="discription">
+
+                                <strong class="new-tag">Fantasy Premier League</strong>
+                                <p class="new-title">GW7 Differentials: Antony</p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">Match officials for Matchweek 7 </a>
+                                </p>
+                                <p class="more-new">
+                                    <i class="fa fa-light fa-newspaper"></i>
+                                    <a href="">GW7 Ones to watch: Nick Pope </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Nike ball hub -->
+                <div id="nike-ball-hub-content" class="home-main-item">
+                    <div class="nike-ball-hub">
+                        <div class="ball-img">
+                            <img src="./assets/images/combined_ball_image.png" alt="nike-ball-hub">
+                        </div>
+                        <div class="ball-info">
+                            <div class="ball-title">
+                                <h5>NIKE BALL HUB</h5>
+                            </div>
+                            <div class="ball-discription">
+                                <p>Discover the history of the Nike ball and its 23-year association with the Premier
+                                    League, from the Nike Geo Merlin in 2000/01 to the Nike Flight in 2022/23.</p>
+                            </div>
+                            <div class="ball-explore-btn">
+                                <button>
+                                    <p>Explore now <i class="fa fa-solid fa-arrow-right"></i></p>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Club News -->
+                <div class="home-main-item">
+                    <div class="item-header">
+                        <h4>Club News</h4>
+                        <div class="more-btn">
+                            <p>More Clubs</p>
+                            <i class="fa fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="news-content club-news-section">
+
+                        <!-- row -->
+                        <div class="row-club-news">
+                            <!-- club new 1 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_1.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">Match Rewind</p>
+                                </div>
+                            </div>
+                            <!-- club new 2 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_2.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">Grealish: There is much more to come</p>
+                                </div>
+                            </div>
+                            <!-- club new 3 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_3.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">Alvarez: The full story behind the Spider-Man connection</p>
+                                </div>
+                            </div>
+                            <!-- club new 4 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_4.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">No More Red & Arsenal Forest receive recognition</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- row -->
+                        <div class="row-club-news">
+                            <!-- club new 5 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_5.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">Mexico City Trophy Tour highlights</p>
+                                </div>
+                            </div>
+                            <!-- club new 6 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_6.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">U21s Report: Seventh heaven for Palace as they topple PSG</p>
+                                </div>
+                            </div>
+                            <!-- club new 7 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_7.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">UWCL Report: Ajax Vrouwen 0-1 Arsenal</p>
+                                </div>
+                            </div>
+                            <!-- club new 8 -->
+                            <div class="club-new-item">
+                                <div class="item-img">
+                                    <img src="./assets/images/club_news_thumb/club_new_8.png" alt="">
+                                </div>
+
+                                <div class="discription">
+                                    <strong class="new-tag">Club news</strong>
+                                    <p class="new-title">Wednesday's United Daily</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <!--Footer -->
+    <footer id="footer-section">
+        <div class="container footer-content">
+
+            <div class="rowFooterItem">
+                <div class="footer-item premier-league">
+                    <p class="footer-item-header">Premier League</p>
+                    <ul class="footer-col-3">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Fixtures</a></li>
+                        <li><a href="#">Clubs</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Table</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Transfer</a></li>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Broadcast</a></li>
+                        <li><a href="#">Players</a></li>
+                        <li><a href="#">Managers</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Youth</a></li>
+                        <li><a href="#">Referees</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-item fantasy">
+                    <p class="footer-item-header">Fantasy</p>
+                    <ul>
+                        <li><a href="">FPL Home<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">My Team<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">FPL Transfer<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">Leagues<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">FPL Fixtures<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">Statistics<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">The Scout<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowFooterItem">
+                <div class="footer-item stats">
+                    <p class="footer-item-header">Stats</p>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Player Stats</a></li>
+                        <li><a href="#">Club Stats</a></li>
+                        <li><a href="#">All-time Stats</a></li>
+                        <li><a href="#">Head-to-Head</a></li>
+                        <li><a href="#">Player Comparison</a></li>
+                        <li><a href="#">Awards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item video">
+                    <p class="footer-item-header">Video</p>
+                    <ul>
+                        <li><a href="#">Lastest Video</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowFooterItem">
+                <div class="footer-item more">
+                    <p class="footer-item-header">Communities</p>
+                    <ul>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Programes</a></li>
+                        <li><a href="#">PL Kicks Heroes</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">PL Primary Stars<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-item more">
+                    <p class="footer-item-header">More</p>
+                    <ul class="footer-col-3">
+                        <li><a href="#">Stay Well</a></li>
+                        <li><a href="#">No Room for Racism</a></li>
+                        <li><a href="#">Rainbow Laces</a></li>
+                        <li><a href="#">King of the Match</a></li>
+                        <li><a href="#">Transfer</a></li>
+                        <li><a href="#">VAR</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Partner</a></li>
+                        <li><a href="#">Season Review</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Nike Ball Hub</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Poppy</a></li>
+                        <li><a href="#">PL Live</a></li>
+                        <li><a href="#">Legal</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item socials">
+                <p class="footer-item-header">Social</p>
+                <ul>
+                    <li><a href="#">PL on Youtube<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">PL on Facebook<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">PL on Instagram<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">PL on Twitter<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer at end of page -->
+    <div class="footer-corporate">
+        <strong class="footer-corporate-title">© PREMIER LEAGUE 2022</strong>
+        <div class="menu-corporate">
+            <a href="">Modern Slavery Statement</a>
+            <a href="">Equality, Diversity and Inclusion Standard</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Policies</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Back To Top</a>
+        </div>
+        <div class="logo-offical">
+            <img src="./assets/images/epl-logo-purple.png" alt="">
+        </div>
+    </div>
+</body>
+<script type="module" src="./js/header.js"></script>
+<script type="module" src="./js/RankTable.js"></script>
+<script src="./js/FeaturedPlayer.js"></script>
+<script src="./js/FeaturedCoach.js"></script>
+
+</html>

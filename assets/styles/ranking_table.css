@@ -1,0 +1,107 @@
+.table thead th{
+    text-align: center;
+    font-size: 11px;
+    color: #6c6c6c;
+    text-transform: capitalize;
+    cursor: help ;
+}
+.table thead th span[title] {
+    border-bottom: 1px dotted;
+}
+.ranking-and-featured{
+    padding: 20px;
+}
+
+.ranking-table .club-col{
+    width: 150px !important;
+}
+.ranking-table .pos-col{
+    width: 10px !important;
+}
+.ranking-table .table-header{
+    background-color: #ff2882;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 6px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0 0;
+}
+.ranking-table .table-header img{
+    width: 150px;
+}
+.ranking-table .table-header p{
+    font-size: 12px;
+    background-color: #fff;
+    width: 95%;
+    height: 40px;
+    margin: 0 !important;
+    color: #333;
+    font-weight: 600;
+    border-radius: 5px 5px 0 0;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.ranking-table .table-body{
+    font-size: 11px;
+}
+.ranking-table .rank-logo-team{
+    width: 20px;
+}
+.ranking-table .rank-name-team{
+    font-size: 11px;
+    color: #333;
+}
+.ranking-table .rank-table-club p{
+    transform: translateX(10px);
+    margin: 0;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.ranking-table .rank-table-club .rank-logo-team{
+    margin-right: 12px;
+}
+.ranking-table thead tr{
+    background-color: #f9f9f9;
+}
+
+.rank-table-content{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    transform: translateY(-5px);
+}
+/* css movement in ranking table*/
+.ranking-table .position{
+    position: relative;
+}
+.ranking-table .movement{
+    position: absolute;
+    left: 30px;
+    top: 15px;
+    display: inline-block;
+}
+.ranking-table .movement.none{
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: #adadad;
+}
+.ranking-table .movement.up,
+.ranking-table .movement.down{
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+}
+.ranking-table .movement.up{
+    border-bottom: 3px solid #13cf00;
+}
+.ranking-table .movement.down{
+    border-top: 3px solid #cf0011;
+}

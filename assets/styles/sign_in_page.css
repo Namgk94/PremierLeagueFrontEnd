@@ -1,0 +1,215 @@
+/* ẩn logo to ở phần header ->> thay vào logo nhỏ */
+.nav-logo-no-res {
+    display: none !important;
+} 
+.nav-logo-res {
+    display: block !important;
+}
+.mainNavBar .navigation-bar{
+    margin-left: 20px;
+}
+/* hidden sub nav */
+.navbar-nav .nav-item.active::before{
+    display: none;
+}
+.subNavBar{
+    display: none;
+}
+
+#sign-in-section{
+    margin-top: 30px;
+}
+#sign-in-section .wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+.page-header{
+    width: 100%;
+    height: 200px;
+    background-image: url('/assets/images/background-header-page.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.page-header h1{
+    color: #fff;
+    font-size: 80px;
+    margin-left: 40px;
+}
+.page-content{
+    flex: 1;
+    width: 100%;
+}
+.page-content h3{
+    background-color: #e90052;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+/* login */
+.sign-in-content .form-input{
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form-input label{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.form-input input{
+    background-color: #e8e8e8;
+    border: none;
+    padding:10px 15px;
+    font-size: 14px;
+    border-bottom: 1px solid #767676;
+    transition: 0.3s all;
+}
+.form-input input:focus{
+    background-color: #fff;
+}
+.form-input input:focus-within{
+    border-bottom: 1px solid #e90052;
+
+}
+.sign-in-content .submit-btn{
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.sign-in-content .submit-btn a{
+    flex: 1;
+    color: #e90052;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.sign-in-content .submit-btn button{
+    flex: 1;
+    color: #fff;
+    background-color: #37003c;
+    width: 100%;
+    padding: 10px;
+    transition: 0.3s all;
+}
+.sign-in-content .submit-btn button:hover{
+    background-color: #000;
+}
+.sign-in-content .tag-or{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 30px;
+}
+.sign-in-content .tag-or span{
+    font-size: 14px;
+    position: relative;
+    top: 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+.sign-in-content .social-login{
+    padding: 0 20px;
+}
+.sign-in-content .social-login ul{
+    column-count: 2;
+    margin: 0;
+    padding: 0;
+}
+.social-login ul li{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.social-login ul button{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 10px;
+    transition: 0.2s all linear;
+}
+.social-login ul button i{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.social-login .facebook{
+    background-color: #2b5e9d;
+}
+.social-login .facebook:hover{
+    background-color: #114b92;
+}
+.social-login .twitter{
+    background-color: #4099ff;
+}
+.social-login .twitter:hover{
+    background-color: #62abff;
+}
+.social-login .google{
+    background-color: #d94c4c;
+}
+.social-login .google:hover{
+    background-color: #d02525;
+}
+.social-login .apple{
+    background-color: #000;
+}
+.social-login .apple:hover{
+    background-color: rgba(0, 0, 0, 0.705);
+}
+
+/* register */
+.register-content .register-wrapper{
+    padding:0 20px;
+}
+.register-content .register{
+    padding: 25px;
+    background-color: #e4e4e4;
+}
+.register h4{
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.register p{
+    font-size: 14px;
+}
+.register ul li{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.register .btn-register{
+    background-color: #e90052;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    transition: 0.2s all linear;
+    margin-top: 15px;
+
+}
+.register .btn-register:hover{
+    background-color: #aa003c;
+}

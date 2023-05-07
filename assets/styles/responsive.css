@@ -1,0 +1,217 @@
+/* ----- 110% -----------  */
+@media screen and (max-width: 1200px) {
+    .new-discription .new-header h2{
+        font-size: 35px !important;
+    }
+
+
+    /* programmes.html */
+    .programmes-content .content{
+        flex-direction: column;
+    }
+    .content .news-link{
+        margin-top: 20px !important; 
+        padding: 20px !important;
+        border-top: 2px solid #efefef;
+        border-bottom: 2px solid #efefef;
+        border-left: unset !important;
+    }
+}
+    
+@media screen and (max-width: 1100px) {
+    .navigation-bar {
+        display: none;
+    }
+
+    .subNavBar ul {
+        margin: 0;
+    }
+
+    .nav-logo-no-res {
+        display: none;
+    }
+
+    .nav-logo-res {
+        display: block !important;
+    }
+
+    .ranking-and-featured{
+        padding: unset !important;
+        width: 90% !important;
+    }
+
+    /* handle btn menu */
+    .collapse-btn{
+        display: block !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .club-site-wrapper {
+        display: none;
+    }
+    .featured-new-main{
+        flex-direction: column;
+    }
+    .partner-banner{
+        height: 100% !important;
+    }
+    .partner-banner .partner-item {
+        width: 50px;
+        height: 40px;
+    }
+    .partner-banner .partner-item img{
+        width: 50px !important;
+    }
+
+    /* hide ranking table */
+    .ranking-and-featured{
+        display: none !important;
+    }
+
+    #header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+    }
+
+    /* latest video */
+    .latest-video-section{
+        flex-direction: column;
+    }
+    .latest-video-section .video-main{
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .latest-video-section .row-content{
+        flex-direction: column !important;
+    }
+    .latest-video-section .video-sub-item{
+        display: flex;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+    .video-sub-item .item-img, 
+    .video-sub-item .discription{
+        flex: 1;
+    }
+
+
+    /* latest news */
+    .latest-new-section .latest-new-item .new-title{
+        font-size: 14px !important;
+        border: none !important;
+        min-height: unset !important;
+    }
+    .latest-new-section .latest-new-item .more-new{
+        display: none;
+    }
+
+
+    /* backgorund on top in a home-main-item */
+    .home-main-item{
+        margin-top: unset !important;
+        border-top: unset !important;
+        position: relative;
+
+    }
+    .home-main-item .item-header h4{
+        padding: 10px 0;
+    }
+    .home-main-item::before{
+        content: '';
+        display: block;
+        background-color: #37003c;
+        width: 100%;
+        height: 40px;
+
+    }
+    .home-main-item::after{
+        content: '';
+        width: 90%;
+        height: 5px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        position: absolute;
+        top: 35px;
+        background: linear-gradient(270deg,#ff2882, #963cff);
+
+    }
+
+
+    /* Sign in page */
+    #sign-in-section .wrapper{
+        flex-direction: column !important;
+    }
+    #sign-in-section .wrapper .page-content{
+        margin-bottom: 50px;
+    }
+}
+
+/* 175% */
+@media screen and (max-width: 800px) {
+
+    /* hide sub nav bar */
+    .subNavBar {
+        display: none;
+    }
+    .mainNavBar {
+        box-shadow: 0 2px 20px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    /* responsive footer */
+    #footer-section{
+        padding: 20px !important;
+    }
+    .footer-content{
+        margin: 0 !important;
+    }
+    .footer-content .rowFooterItem{
+        margin-top: unset;
+        flex-direction: column;
+        height: 100% !important;
+        border-bottom: none;
+    }
+    .rowFooterItem .footer-item{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ffffff33;
+    }
+
+
+    /* unset margin in class container */
+    .homepage-content-wrapper{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}   
+
+/* 200% */
+@media screen and (max-width: 700px) {
+    .nav-options .slogan {
+        display: none;
+    }
+}
+
+/* 250% */
+@media screen and (max-width: 600px) {
+
+    .partner-banner{
+        height: 100% !important;
+        width: 100%;
+        flex-direction: column;
+        align-items: center !important;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .nav-options .form-inline {
+        display: none;
+    }
+
+}

@@ -1,0 +1,159 @@
+.page-header{
+    width: 100%;
+    height: 250px;
+    background-color: #05f0ff;
+    background-image: url('/assets/images/programmes/page-hero-primary.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 80px;
+}
+.page-header .header{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1{
+    font-size: 75px;
+    color: #37003c;
+    font-weight: bolder;
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serifs;
+}
+.page-header button{
+    color: #6c6c6c;
+    background-color: #ebebe6;
+    font-weight: 500;
+    border: none;
+    transition: 0.2s all linear;
+    font-size: 14px;
+}
+.page-header button.option-btn{
+    padding: 15px 30px;
+    border-radius: 3px 3px 0 0 ;
+}
+.page-header button.option-btn.active{
+    background-color: #fff;
+    color: #000;
+}
+.page-header button.share-btn{
+    padding: 10px 10px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #000;
+}
+.page-header button:hover,
+.page-header button:focus-visible{
+    background-color: #ff2882;
+    color: #fff;
+}
+
+/* programmes-content */
+.programmes-content{
+    padding: 35px 0 !important;
+    border-top: 2px solid #efefef;
+}
+.programmes-content .content{
+    display: none;
+    width: 100%;
+}
+.programmes-content .content.show{
+    display: flex !important;
+}
+.content .title-content{
+    flex: 5;
+    display: flex;
+    cursor: pointer;
+}
+.content .title-content:hover .img-thumb img{ 
+    transform: scale(1.1);
+}
+.content .title-content:hover .title h2 a{
+    text-decoration: underline !important;
+}
+.content .title-content .img-thumb{
+    width: 700px;
+    overflow: hidden;
+}
+
+.img-thumb img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s all ease-in-out;
+}
+.content .title-content .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 40px;
+    position: relative;
+}
+.content .title-content .title::before{
+    content: '';
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(0deg, #963cff, #ff2882);
+}
+.title h2{
+    margin-bottom: 10px;
+}
+.title h2 a{
+    color: #000;
+    font-size: 31px;
+    font-weight: 400;
+    text-decoration: none !important;
+}
+.title h2 i{
+    font-size: 13px !important;
+    text-align: center;
+    position: relative;
+    top: -5px;
+}
+.title .tag{
+    color: #ff2882;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.title .discription{
+    font-size: 13px;
+    color: #6c6c6c;
+    text-align: justify;
+}
+.content .news-link{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+    border-left: 1px solid #efefef;
+
+}
+.news-link .new{
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.news-link .new i {
+    color: #ff2882;
+    font-size: 11px;
+    margin-right: 5px;
+}
+.news-link .new a {
+    color: #6c6c6c;
+    font-size: 11px;
+    text-decoration: none;
+}
+.news-link .new:hover a{
+    text-decoration: underline !important;
+    color: #ff2882;
+}

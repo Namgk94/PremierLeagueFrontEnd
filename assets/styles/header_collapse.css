@@ -1,0 +1,145 @@
+.menu-options .nav-item-option{
+    display: none;
+}
+.menu-options .nav-item-option.active{
+    display: block;
+}
+.navbar-collapse .menu-title .nav-item.active{
+    background-color: #4e0056;
+}
+.navbar-collapse .menu-title .nav-item.active p{
+    opacity: 1;
+}
+
+.navbar-collapse{
+    display: none;
+    height: 250px;
+    min-height: 253px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: absolute;
+    z-index: 100;
+}
+.navbar-collapse.active{
+    display: flex !important;
+}
+
+.collapse-btn{
+    display: none;
+}
+.menu-btn.active,
+.close-btn.active{
+    display: flex !important;
+}
+.menu-btn {
+    display: none !important;
+    color: #fff;
+    font-size: 30px;
+    margin-right: 10px;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+.close-btn{
+    display: none !important;
+    color: #fff;
+    background-color: #e90052;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.close-btn i{
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 10px;
+    transform: 0.3s all;
+    color: #fff;
+}
+
+.close-btn:hover i{
+    animation:rotate-animate 0.5s linear ;
+}
+@keyframes rotate-animate {
+    from{
+        transform: rotate(180deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.menu-btn:hover{
+    transform: scale(1.2);
+}
+.menu-title{
+    flex: 1;
+    background-color: #37003c;
+    color: #fff;
+    border-top: 3px solid #ff2882;
+    height: 100%;
+}
+.menu-title .nav-item p{
+    opacity: 0.6;
+    margin: 0;
+}
+.menu-title .nav-item p span{
+    padding-left: 5px;
+}
+.menu-options{
+    flex: 2;
+    background-color: #fff;
+    height: 100%;
+}
+.menu-title .nav-item{
+    height: 50px;
+    border-bottom: 3px solid #250028;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.menu-title .nav-item.active::after{
+    content: '';
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    display: block;
+    position: absolute;
+    right: 0px;
+    border-bottom:8px solid transparent ;
+    border-top:8px solid transparent ;
+    border-right:8px solid #fff ;
+    border-left:8px solid transparent ;
+
+}
+.menu-options .nav-item-option {
+    padding: 0;
+    border-top: 3px solid #fff;
+    height: 100%;
+    overflow-y: auto;
+}
+.menu-options .nav-item-option li {
+    height: 50px;
+    font-size: 14px;
+    border-bottom: 1px solid #b8b8b874;
+    display: flex;
+    align-items: center;
+}
+.menu-options .nav-item-option li:hover{
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+.nav-item-option li a{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    padding-left: 20px;
+    font-weight: bolder;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: #333;
+}

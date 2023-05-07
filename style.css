@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+html{
+    font-family: PremierSans-Bold,Arial,Helvetica Neue,Helvetica,sans-serifs;
+    
+}
+body{
+    overflow-x: auto;
+    background-color: #fff !important;
+}
+::selection{
+    background-color: #ff2882;
+    color: #fff;
+}

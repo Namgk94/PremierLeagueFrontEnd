@@ -1,0 +1,119 @@
+#footer-section{
+    background-image: url("/assets/images/main-bg-epl-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rowFooterItem{
+    display: flex;
+    height: 230px;
+    width: 100%;
+    border-bottom: 1px solid #ffffff33;
+    margin-top: 20px;
+}
+.rowFooterItem:last-child{
+    border-bottom: unset;
+
+}
+.rowFooterItem .footer-item{
+    flex: 1;
+    width: 100%;
+}
+.footer-item-header{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.rowFooterItem .footer-col-3{
+    column-count: 3 !important;
+}
+.footer-item ul{
+    padding: 0;
+    column-count: 2;
+    margin: 0;
+}
+.footer-item ul li{
+    display: inline-block;
+    width: 100%;
+    padding: 5px 0 !important;
+
+}
+.footer-item ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    width: 90%;
+
+    /* xử lý tràn text */
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /* Số dòng muốn hiển thị */
+    -webkit-box-orient: vertical;
+}
+.footer-item ul li a:hover{
+    color: #ff2882;
+}
+.footer-item ul li a i{
+    color: #ff2882;
+    margin-left: 10px;
+}
+.footer-item.socials{
+    width: 50%;
+}
+
+/* footer corporate */
+.footer-corporate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 20px;
+}
+.footer-corporate .footer-corporate-title {
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.menu-corporate{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.menu-corporate a{
+    color: #242424;
+    font-size: 11px;
+    padding: 0 10px;
+    text-decoration: none;
+    position: relative;
+}
+.menu-corporate a::after{
+    content: '';
+    width: 3px;
+    height: 3px;
+    background-color: #242424;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    right: -1px;
+}
+.menu-corporate a:last-child:after{
+    display: none;
+}
+.menu-corporate a:hover{
+    text-decoration: underline;
+    color: #242424;
+}
+.logo-offical img{
+    width: 150px;
+    margin-top: 30px;
+}

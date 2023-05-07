@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premier League Football</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/styles/header.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="./assets/styles/sign_in_page.css">
+    <link rel="stylesheet" href="./assets/styles/header_collapse.css">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+     <!-- header -->
+     <header id="header">
+        <!-- club site on top -->
+        <div class="club-site-wrapper">
+            <ul class="club-site-content"></ul>
+        </div>
+
+        <div id="NavigationBar">
+            <!-- Brand -->
+            <a class="navbar-brand nav-logo-no-res" href="index.html">
+                <div class="league-logo">
+                    <img src="./assets/images/premier-league-logo.png" alt="league-logo">
+                </div>
+            </a>
+
+            <!-- main navbar -->
+            <div class="mainNavBar">
+                <a class="nav-logo-res" href="index.html">
+                    <div class="league-logo-res">
+                        <img src="./assets/images/premier-league-logo-res.png" alt="league-logo">
+                    </div>
+                </a>
+                <nav class="navigation-bar">
+
+                    <!-- Navbar links -->
+                    <div class="navbar-no-collapse">
+                        <ul class="navbar-nav">
+                            <li role="menu" class="nav-item active">
+                                <p class="nav-link" href="">Premier League
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="index.html">Home</a></li>
+                                        <li><a class="item-dropdown" href="#">Fixtures</a></li>
+                                        <li><a class="item-dropdown" href="#">Results</a></li>
+                                        <li><a class="item-dropdown" href="table.html">Table</a></li>
+                                        <li><a class="item-dropdown" href="#">Awards</a></li>
+                                        <li><a class="item-dropdown" href="hall_of_fame.html">Hall of Fame</a></li>
+                                        <li><a class="item-dropdown" href="clubs.html">Clubs</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li role="menu" class="nav-item">
+                                <p class="nav-link" href="">Fantasy
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="#">Fantasy</a></li>
+                                        <li><a class="item-dropdown" href="#">Fantasy Draft</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <p class="nav-link" href="">Video</p>
+                            </li>
+                            <li role="menu" class="nav-item">
+                                <p class="nav-link" href="">Communities
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="#">Latest</a></li>
+                                        <li><a class="item-dropdown" href="strategy.html">Strategy</a></li>
+                                        <li><a class="item-dropdown" href="programmes.html">Programmes</a></li>
+                                        <li><a class="item-dropdown" href="#">PL Charitable Fund</a></li>
+                                        <li><a class="item-dropdown" href="#">Supporting the game</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            <li role="menu" class="nav-item">
+                                <p class="nav-link" href="">More
+                                    <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                                </p>
+                                <div class="nav-dropdown">
+                                    <ul>
+                                        <li><a class="item-dropdown" href="stats.html">Stats</a></li>
+                                        <li><a class="item-dropdown" href="#">Stay Well</a></li>
+                                        <li><a class="item-dropdown" href="#">Man of the Match</a></li>
+                                        <li><a class="item-dropdown" href="#">Transfer</a></li>
+                                        <li><a class="item-dropdown" href="#">VAR</a></li>
+                                        <li><a class="item-dropdown" href="#">Nike Ball Hub</a></li>
+                                        <li><a class="item-dropdown" href="#">About</a></li>
+                                        <li><a class="item-dropdown" href="#">Contact Us</a></li>
+                                        <li><a class="item-dropdown" href="#">Season review</a></li>
+                                        <li><a class="item-dropdown" href="partners.html">Partners</a></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="nav-options">
+                    <p class="slogan">No room For Racism</p>
+                    <!-- <p class="sign-in">
+                        <a href="/sign_in_page.html" target="_blank">Sign in</a>
+                    </p>
+                    <form class="form-inline" action="">
+                        <input class="search-input" type="text" placeholder="Search">
+                        <button class="btn-search" type="submit"><i class="fa fa-solid fa-magnifying-glass"></i></button>
+                    </form> -->
+
+                    <div class="collapse-btn">
+                        <div class="menu-btn active">
+                            <i class="fa fa-solid fa-bars"></i>
+                        </div>
+                        <div class="close-btn">
+                            <i class="fa fa-regular fa-xmark"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="navbar-collapse">
+                <div class="menu-title">
+                    <div class="nav-item">
+                        <p>Premier League
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Fantasy
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Video
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>Communities
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                    <div class="nav-item">
+                        <p>More
+                            <span><i class="fa fa-sharp fa-solid fa-caret-down"></i></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-options">
+                    <!-- PL -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Fixtures</a>
+                        </li>
+                        <li>
+                            <a href="#">Results</a>
+                        </li>
+                        <li>
+                            <a href="#">Table</a>
+                        </li>
+                        <li>
+                            <a href="#">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#">Hall of Fame</a>
+                        </li>
+                        <li>
+                            <a href="clubs.html">Clubs</a>
+                        </li>
+                    </ul>
+
+                    <!-- Fantasy -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Fantasy</a>
+                        </li>
+                        <li>
+                            <a href="#">Fantasy Draft</a>
+                        </li>
+                    </ul>
+
+                    <!-- Video -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">Fantasy</a>
+                        </li>
+                        <li>
+                            <a href="#">Playlists</a>
+                        </li>
+                        <li>
+                            <a href="#">All Videos</a>
+                        </li>
+                    </ul>
+
+                    <!-- communities -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Latest</a>
+                        </li>
+                        <li>
+                            <a href="#">Strategy</a>
+                        </li>
+                        <li>
+                            <a href="#">Programes</a>
+                        </li>
+                        <li>
+                            <a href="#">PL Charitable Fund</a>
+                        </li>
+                        <li>
+                            <a href="#">Supporting the game</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- more -->
+                    <ul class="nav-item-option">
+                        <li>
+                            <a href="#">Stats</a>
+                        </li>
+                        <li>
+                            <a href="#">Stay well</a>
+                        </li>
+                        <li>
+                            <a href="#">Man of the match</a>
+                        </li>
+                        <li>
+                            <a href="#">Transfer</a>
+                        </li>
+                        <li>
+                            <a href="#">VAR</a>
+                        </li>
+                        <li>
+                            <a href="#nike-ball-hub-content">Nike Ball Hub</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li>
+                            <a href="#">Season review</a>
+                        </li>
+                        <li>
+                            <a href="#">Partners</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="subNavBar">
+                <ul>
+                    <li class="subNav-item">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Fixtures</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Results</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Table</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Awards</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Hall of Fame</a>
+                    </li>
+                    <li class="subNav-item">
+                        <a href="#">Clubs</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- SIGN IN PAGE -->
+
+    <section id="sign-in-section">
+        <div class="page-header">
+            <h1>Your Account</h1>
+        </div>
+
+        <div class="wrapper container">
+            <div class="page-content sign-in-content">
+                <h3>Sign in</h3>
+                <div class="form-input email">
+                    <label for="account-email">Email Address</label>
+                    <input id="account-email" type="mail" placeholder="Email Address">
+                </div>
+                <div class="form-input password">
+                    <label for="account-pass">Password</label>
+                    <input id="account-pass" type="password" placeholder="Password">
+                </div>
+
+                <div class="submit-btn">
+                    <a href="#">Forgot login details?</a>
+                    <button type="submit">Sign in</button>
+                </div>
+
+                <div class="tag-or">
+                    <span>or login with</span>
+                </div>
+
+                <div class="social-login">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <button class="facebook">
+                                    <i class="fa fa-brands fa-facebook-f"></i>
+                                    Facebook
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <button class="twitter">
+                                    <i class="fa fa-brands fa-twitter"></i>
+                                    Twitter
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <button class="google">
+                                    <i class="fa fa-brands fa-google"></i>
+                                    Google
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <button class="apple">
+                                    <i class="fa fa-brands fa-apple"></i>
+                                    Apple
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="page-content register-content">
+                <h3>Register</h3>
+
+                <div class="register-wrapper">
+                    <div class="register">
+                        <h4>Don't have a Premier League account?</h4>
+                        <p>In that case, you are missing out on:</p>
+                        <ul>
+                            <li>Fantasy Premier League football game</li>
+                            <li>Exclusive fan services</li>
+                            <li>Customised site content</li>
+                            <li>Favourite Club information and notifications</li>
+                        </ul>
+    
+                        <a target="_blank" href="register.html">
+                            <button class="btn-register">Register</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer -->
+    <footer id="footer-section">
+        <div class="container footer-content">
+
+            <div class="rowFooterItem">
+                <div class="footer-item premier-league">
+                    <p class="footer-item-header">Premier League</p>
+                    <ul class="footer-col-3">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Fixtures</a></li>
+                        <li><a href="#">Clubs</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Social</a></li>
+                        <li><a href="#">Table</a></li>
+                        <li><a href="#">Results</a></li>
+                        <li><a href="#">Transfer</a></li>
+                        <li><a href="#">Tickets</a></li>
+                        <li><a href="#">Broadcast</a></li>
+                        <li><a href="#">Players</a></li>
+                        <li><a href="#">Managers</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Youth</a></li>
+                        <li><a href="#">Referees</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-item fantasy">
+                    <p class="footer-item-header">Fantasy</p>
+                    <ul>
+                        <li><a href="">FPL Home<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">My Team<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">FPL Transfer<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">Leagues<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">FPL Fixtures<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">Statistics<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                        <li><a href="">The Scout<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowFooterItem">
+                <div class="footer-item stats">
+                    <p class="footer-item-header">Stats</p>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Player Stats</a></li>
+                        <li><a href="#">Club Stats</a></li>
+                        <li><a href="#">All-time Stats</a></li>
+                        <li><a href="#">Head-to-Head</a></li>
+                        <li><a href="#">Player Comparison</a></li>
+                        <li><a href="#">Awards</a></li>
+                    </ul>
+                </div>
+                <div class="footer-item video">
+                    <p class="footer-item-header">Video</p>
+                    <ul>
+                        <li><a href="#">Lastest Video</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rowFooterItem">
+                <div class="footer-item more">
+                    <p class="footer-item-header">Communities</p>
+                    <ul>
+                        <li><a href="#">Latest</a></li>
+                        <li><a href="#">Programes</a></li>
+                        <li><a href="#">PL Kicks Heroes</a></li>
+                        <li><a href="#">Strategy</a></li>
+                        <li><a href="#">PL Primary Stars<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-item more">
+                    <p class="footer-item-header">More</p>
+                    <ul class="footer-col-3">
+                        <li><a href="#">Stay Well</a></li>
+                        <li><a href="#">No Room for Racism</a></li>
+                        <li><a href="#">Rainbow Laces</a></li>
+                        <li><a href="#">King of the Match</a></li>
+                        <li><a href="#">Transfer</a></li>
+                        <li><a href="#">VAR</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Partner</a></li>
+                        <li><a href="#">Season Review</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Nike Ball Hub</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Poppy</a></li>
+                        <li><a href="#">PL Live</a></li>
+                        <li><a href="#">Legal</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-item socials">
+                <p class="footer-item-header">Social</p>
+                <ul>
+                    <li><a href="#">PL on Youtube<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">PL on Facebook<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">PL on Instagram<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                    <li><a href="#">PL on Twitter<i class="fa fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer at end of page -->
+    <div class="footer-corporate">
+        <strong class="footer-corporate-title">© PREMIER LEAGUE 2022</strong>
+        <div class="menu-corporate">
+            <a href="">Modern Slavery Statement</a>
+            <a href="">Equality, Diversity and Inclusion Standard</a>
+            <a href="">Terms & Conditions</a>
+            <a href="">Policies</a>
+            <a href="">Cookie Policy</a>
+            <a href="">Back To Top</a>
+        </div>
+        <div class="logo-offical">
+            <img src="./assets/images/epl-logo-purple.png" alt="">
+        </div>
+    </div>
+</body>
+<script type="module" src="./js/header.js"></script>
+</html>
